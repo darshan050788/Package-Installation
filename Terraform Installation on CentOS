@@ -1,0 +1,18 @@
+Terraform Installation
+========================
+
+a) Download Terraform binary - 0.12.29 version
+https://releases.hashicorp.com/terraform/0.12.29/terraform_0.12.29_linux_amd64.zip
+
+b) yum instal wget -y
+
+c) wget https://releases.hashicorp.com/terraform/0.12.29/terraform_0.12.29_linux_amd64.zip
+d) yum install unzip -y
+e) unzip terraform_0.12.29_linux_amd64.zip
+f) move binary to binary location
+
+g) exit out of sudo mode
+sudo mv terraform /usr/local/bin
+
+h) now you can check terraform is installed or not
+terraform version
