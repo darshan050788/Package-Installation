@@ -17,3 +17,6 @@ Log into the MySQL server as the root user, using the temporary password located
 Update the password for the root user:
 mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'PASSWORD';
 mysql> exit
+
+How to do secure installation of mysql (Optional Step)
+mysql_secure_installation
