@@ -1,0 +1,17 @@
+Download the MySQL APT repository configuration file from the MySQL APT Repository download page:
+# wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
+
+Install the downloaded release package for the MySQL server. In the package configuration window, ensure that MySQL Server and Cluster are set to mysql-8.0, and that the MySQL Tools and Connectors is Enabled then hit OK:
+# sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
+
+Resynchronize the package index files:
+# sudo apt update
+
+Install the MySQL server and dependencies. When prompted, enter a password, then select Use Strong Password Encryption (RECOMMENDED):
+# sudo apt install -y mysql-server
+
+Validate that the MySQL server is running, and then log in using the password created in step 4:
+
+# sudo systemctl status mysql
+# mysql -u root -p
+mysql> exit
