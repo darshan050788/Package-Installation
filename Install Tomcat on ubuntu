@@ -1,0 +1,11 @@
+sudo apt update
+sudo apt-cache search tomcat
+sudo apt install tomcat9 tomcat9-admin
+ss -ltn
+$ sudo systemctl enable tomcat9
+OR
+$ sudo systemctl disable tomcat
+sudo ufw allow from any to any port 8080 proto tcp
+sudo nano /etc/tomcat9/tomcat-users.xml
+sudo systemctl restart tomcat9
+Login tomcat webUI
